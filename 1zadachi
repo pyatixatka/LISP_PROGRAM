@@ -82,10 +82,7 @@
 				(list
 	                (cons (car lst) (car pr))
 	                (cons (cadr lst) (cadr pr))))
-			(чет/нечет (cddr lst)))
-        )
-     )
-)
+			(чет/нечет (cddr lst))))))
 
 ;;;
 ;;; (чет/нечет '(1 2 3 4 5))
@@ -102,9 +99,7 @@
 (defun пары (lst)
 	(cond
 		((null (cdr lst)) lst)
-		(t (cons(list (car lst) (cadr lst)) (couples (cddr lst))))
-	)
-)
+		(t (cons(list (car lst) (cadr lst)) (пары (cddr lst))))))
 
 ;;;
 ;;; (пары '(a b c d e f g h))
