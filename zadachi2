@@ -34,11 +34,14 @@
 ;;;
 ;;; (setq fi '(cdr car last))
 ;;; (setq xi '((a b c) (a b c) (a b c)))
-;;; (print (APL-APPLY fi xi))
+;;; (APL-APPLY fi xi)
+;;; ((B C) A (C))
 
 ;;; (setq fi '(reverse cadr length))
 ;;; (setq xi '((1 2 3) (1 2 3) (1 2 3)))
-;;; (print (APL-APPLY fi xi))
+;;; (APL-APPLY fi xi)
+;;; ((3 2 1) 2 3)
+
 
 ;=;=;=;=;=;=;=;=;=;=;=;=;=;=;=;=;=;=;=;=;=;=;=;=;=;=;=;=;=;=;=;=;=;=;=;=;=;=;=;=;=;=;=;=;=;=;=;=;
 
