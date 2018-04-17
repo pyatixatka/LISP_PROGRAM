@@ -50,14 +50,14 @@
 (defun Очистить_все (lst)
 ((lambda (x)
   (cond ((null lst) nil)
-        ((remprop lst x) (Очистить_Все lst)))) (car (symbol-plist lst))))
+        ((remprop lst x) (Очистить_все lst)))) (car (symbol-plist lst))))
 
 (defun Свойства (lst)
 ((lambda (x)
   (cond ((null lst) nil)
         (x))) (symbol-plist lst)))
 ;;;
-;;; (Добавить_свойста 'ноутбук)
+;;; (Добавить_свойства 'ноутбук)
 ;;; (Год (2016) Тип (Игровой) Фирма (ASUS) Модель (K55VD) Вес (2 KG))
 ;;; (Свойства 'ноутбук)
 ;;; (Год (2016) Тип (Игровой) Фирма (ASUS) Модель (K55VD) Вес (2 KG))
