@@ -29,9 +29,7 @@
   (cond 
     ((null f) nil)
     ((null x) nil)
-    (t (cons (funcall (car f) (car x)) (APL-APPLY (cdr f) (cdr x))))
-   )
-)
+    (t (cons (funcall (car f) (car x)) (APL-APPLY (cdr f) (cdr x))))))
 
 ;;;
 ;;; (setq fi '(cdr car last))
@@ -68,8 +66,7 @@
 ;;; предикат.
 
 (defun Удалить_Если_Не (p lst)
-	(mapcan #'(lambda (x) (if (funcall p x) (list x) nil)) lst)
-) 
+	(mapcan #'(lambda (x) (if (funcall p x) (list x) nil)) lst)) 
 
 ;;;
 ;;; (Удалить_Если_Не  #'evenp '(1 2 3 4 5 6 7 9))
