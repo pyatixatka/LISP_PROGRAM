@@ -50,7 +50,7 @@
 (defun Очистить_все (lst)
 ((lambda (x)
   (cond ((null lst) nil)
-        ((remprop lst x) (ОчиститьВсе lst)))) (car (symbol-plist lst))))
+        ((remprop lst x) (Очистить_Все lst)))) (car (symbol-plist lst))))
 
 (defun Свойства (lst)
 ((lambda (x)
