@@ -1,0 +1,11 @@
+-- Зинченко В.Д.
+-- Задача №26
+-- Разбить список на пары
+
+paru_func [] = []
+paru_func (a:[]) = [[a]]
+paru_func (a:b:list) = [a, b]:(paru_func list)
+
+main = print $ paru_func [1, 2, 3, 3]
+
+-- [[1,2],[3,3]]
